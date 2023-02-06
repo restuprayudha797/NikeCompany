@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Farel Nike</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.svg"
+    />
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <style>
+    body {
+      background: #eee;
+    }
+
+    .card {
+      border: none;
+
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .card:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background-color: #e1bee7;
+      transform: scaleY(1);
+      transition: all 0.5s;
+      transform-origin: bottom;
+    }
+
+    .card:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background-color: #8e24aa;
+      transform: scaleY(0);
+      transition: all 0.5s;
+      transform-origin: bottom;
+    }
+
+    .card:hover::after {
+      transform: scaleY(1);
+    }
+
+    .fonts {
+      font-size: 11px;
+    }
+
+    .social-list {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .social-list li {
+      padding: 10px;
+      color: #8e24aa;
+      font-size: 19px;
+    }
+
+    .buttons button:nth-child(1) {
+      border: 1px solid #8e24aa !important;
+      color: #8e24aa;
+      height: 40px;
+    }
+
+    .buttons button:nth-child(1):hover {
+      border: 1px solid #8e24aa !important;
+      color: #fff;
+      height: 40px;
+      background-color: #8e24aa;
+    }
+
+    .buttons button:nth-child(2) {
+      border: 1px solid #8e24aa !important;
+      background-color: #8e24aa;
+      color: #fff;
+      height: 40px;
+    }
+  </style>
+
+  <body>
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+      <!-- Start Topbar -->
+      <div class="topbar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="top-left">
+                <ul class="menu-top-link">
+                  <li>
+                    <div class="select-position">
+                      <select id="select4">
+                        <option value="0" selected>Rp</option>
+                        <option value="1">€ EURO</option>
+                        <option value="2">$ CAD</option>
+                        <option value="3">₹ INR</option>
+                        <option value="4">¥ CNY</option>
+                        <option value="5">৳ BDT</option>
+                        <option value="6">$ USD</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-position">
+                      <select id="select5">
+                        <option value="0" selected>Indonesia</option>
+                        <option value="1">Español</option>
+                        <option value="2">Filipino</option>
+                        <option value="3">Français</option>
+                        <option value="4">العربية</option>
+                        <option value="5">हिन्दी</option>
+                        <option value="6">বাংলা</option>
+                        <option value="7">English</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="top-middle">
+                <ul class="useful-links">
+                  <li><a href="index.html">Beranda</a></li>
+                  <li><a href="tentang.html">Tentang</a></li>
+                  <li><a href="profile.html">Profile</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="top-end">
+                <div class="user">
+                  <i class="lni lni-user"></i>
+                  Hello
+                </div>
+                <ul class="user-login">
+                  <li>
+                    <a href="login.html">Sign In</a>
+                  </li>
+                  <li>
+                    <a href="register.html">Register</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Topbar -->
+      <!-- Start Header Middle -->
+      <div class="header-middle">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3 col-md-3 col-7">
+              <!-- Start Header Logo -->
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/LogoNike.png" alt="Logo" />
+              </a>
+              <!-- End Header Logo -->
+            </div>
+            <div class="col-lg-5 col-md-7 d-xs-none">
+              <!-- Start Main Menu Search -->
+              <div class="main-menu-search">
+                <!-- navbar search start -->
+                <div class="navbar-search search-style-5">
+                  <div class="search-select">
+                    <div class="select-position">
+                      <select id="select1">
+                        <option selected>All</option>
+                        <option value="1">option 01</option>
+                        <option value="2">option 02</option>
+                        <option value="3">option 03</option>
+                        <option value="4">option 04</option>
+                        <option value="5">option 05</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="search-input">
+                    <input type="text" placeholder="Search" />
+                  </div>
+                  <div class="search-btn">
+                    <button><i class="lni lni-search-alt"></i></button>
+                  </div>
+                </div>
+                <!-- navbar search Ends -->
+              </div>
+              <!-- End Main Menu Search -->
+            </div>
+            <div class="col-lg-4 col-md-2 col-5">
+              <div class="middle-right-area">
+                <div class="nav-hotline">
+                  <i class="lni lni-phone"></i>
+                  <h3>
+                    Hotline:
+                    <span>(+62) 852-6544-4579</span>
+                  </h3>
+                </div>
+                <div class="navbar-cart">
+                  <div class="wishlist">
+                    <a href="javascript:void(0)">
+                      <i class="lni lni-heart"></i>
+                      <span class="total-items">0</span>
+                    </a>
+                  </div>
+                  <div class="cart-items">
+                    <a href="javascript:void(0)" class="main-btn">
+                      <i class="lni lni-cart"></i>
+                      <span class="total-items">2</span>
+                    </a>
+                    <!-- Shopping Item -->
+                    <div class="shopping-item">
+                      <div class="dropdown-cart-header">
+                        <span>2 Items</span>
+                        <a href="cart.html">View Cart</a>
+                      </div>
+                      <ul class="shopping-list">
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            class="remove"
+                            title="Remove this item"
+                            ><i class="lni lni-close"></i
+                          ></a>
+                          <div class="cart-img-head">
+                            <a class="cart-img" href="product-details.html"
+                              ><img src="assets/images/products/2.jpg" alt="#"
+                            /></a>
+                          </div>
+
+                          <div class="content">
+                            <h4>
+                              <a href="product-details.html"> Nike Air Force</a>
+                            </h4>
+                            <p class="quantity">
+                              1x - <span class="amount">Rp.275.000</span>
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            class="remove"
+                            title="Remove this item"
+                            ><i class="lni lni-close"></i
+                          ></a>
+                          <div class="cart-img-head">
+                            <a class="cart-img" href="product-details.html"
+                              ><img src="assets/images/products/8.jpg" alt="#"
+                            /></a>
+                          </div>
+                          <div class="content">
+                            <h4>
+                              <a href="product-details.html"
+                                >Nike Air Max 270</a
+                              >
+                            </h4>
+                            <p class="quantity">
+                              1x - <span class="amount">Rp.899.000</span>
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="bottom">
+                        <div class="total">
+                          <span>Total</span>
+                          <span class="total-amount">Rp.1.174.000</span>
+                        </div>
+                        <div class="button">
+                          <a href="checkout.html" class="btn animate"
+                            >Periksa</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ End Shopping Item -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Header Middle -->
+      <!-- Start Header Bottom -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-6 col-12">
+            <div class="nav-inner">
+              <!-- Start Mega Category Menu -->
+
+              <!-- End Mega Category Menu -->
+              <!-- Start Navbar -->
+              <nav class="navbar navbar-expand-lg">
+                <button
+                  class="navbar-toggler mobile-menu-btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse sub-menu-bar"
+                  id="navbarSupportedContent"
+                >
+                  <ul id="nav" class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a href="index.html" aria-label="Toggle navigation"
+                        >Beranda</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="tentang.html" aria-label="Toggle navigation"
+                        >Tentang</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="profile.html"
+                        class="active"
+                        aria-label="Toggle navigation"
+                        >Profile</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="contact.html" aria-label="Toggle navigation"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- navbar collapse -->
+              </nav>
+              <!-- End Navbar -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <!-- Start Nav Social -->
+            <div class="nav-social">
+              <h5 class="title">Follow Us:</h5>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><i class="lni lni-facebook-filled"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><i class="lni lni-twitter-original"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/frrel_ndre05/"
+                    ><i class="lni lni-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><i class="lni lni-skype"></i></a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Nav Social -->
+          </div>
+        </div>
+      </div>
+      <!-- End Header Bottom -->
+    </header>
+    <!-- End Header Area -->'
+
+    <!-- start isi -->
+    <div class="mt-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-7">
+          <div class="card p-3 py-4">
+            <div class="text-center">
+              <img
+                src="assets/images/logo/farel1.jpg"
+                width="20%"
+                class="rounded-circle"
+              />
+            </div>
+
+            <div class="text-center mt-3">
+              <span class="bg-secondary p-1 px-4 rounded text-white"
+                >Profile</span
+              >
+              <h5 class="mt-2 mb-0">FARREL ANDREA PUTRA</h5>
+              <span>SISWA SMK N 2 PINGGIR  </span>
+
+              <div class="px-4 mt-1">
+                <p class="fonts">
+                  Hai teman-teman perkenalkan nama saya "FARREL ANDREA PUTRA"
+                  saya berasal dari SMK NEGERI 2 PINGGIR KELAS XI JURUSAN TKJ 1
+                  saya membuat website ini sebagai tugas akhir saya magang di
+                  PT.GARUDA CYBER INDONESIA semoga website ini bisa menjadi
+                  inspirasi nanti nya bagi teman teman yang ingin belajar web
+                  Developer
+                </p>
+              </div>
+
+              <ul class="social-list">
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-dribbble"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-linkedin"></i></li>
+                <li><i class="fa fa-google"></i></li>
+              </ul>
+
+              <div class="buttons">
+                <button class="btn btn-outline-primary px-4">Message</button>
+                <button class="btn btn-primary px-4 ms-3">Contact</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end isi -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer" style="margin-top: 100px">
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="inner-content">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-12">
+                <div class="payment-gateway">
+                  <span>We Accept:</span>
+                  <img
+                    src="assets/images/footer/credit-cards-footer.png"
+                    alt="#"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="copyright">
+                  <p>
+                    Designed and Developed by<a
+                      href="https://graygrids.com/"
+                      rel="nofollow"
+                      target="_blank"
+                      >Farel</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <ul class="socila">
+                  <li>
+                    <span>Follow Us On:</span>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"
+                      ><i class="lni lni-facebook-filled"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"
+                      ><i class="lni lni-twitter-original"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"
+                      ><i class="lni lni-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)"
+                      ><i class="lni lni-google"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- start Modal -->
+
+    <!-- modal nike X G-Dragon -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Nike X G-Dragon
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" style="width: 80%; margin: 20px auto">
+              <div class="gambar">
+                <img src="assets/images/products/1.jpg" alt="" />
+              </div>
+              <div class="conten mb-5">
+                <h5>
+                  Nike X G-Dragon baru saja menyelesaikan tugas wajib militernya
+                  pada 26 Oktober lalu. Namun, idola kelahiran 1988 ini langsung
+                  dibanjiri tawaran kolaborasi Salah satunya datang dari brand
+                  sepatu ternama Nike, yang menggandeng G-Dragon dalam perilisan
+                  seri terbaru mereka AF1 (Air Force 1) Para-Noise. Kolaborasi
+                  ini menjadi proyek pertama GD, setelah keluar dari wamil.
+                  Sneakers ini dibuat berdasarkan minat G-Dragon dalam fashion,
+                  musik, seni, budaya, olahraga, dan segala sesuatu yang ia
+                  ingin tahu secara intelektual.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end nike x g-dragon -->
+
+    <!-- start nike air force -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Nike Air Force
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" style="width: 80%; margin: 20px auto">
+              <div class="gambar">
+                <img src="assets/images/products/2.jpg" alt="" />
+              </div>
+              <div class="conten mb-5">
+                <h5>
+                  Air Force 1 adalah sepatu basket pertama yang sol bawahnya
+                  merupakan hasil pengecapan. Berbeda dengan sepatu-sepatu lain
+                  di masanya yang menggunakan sol bawah hasil proses vulkanisir
+                  seperti Converse Chuck Taylor All Star. Bagian sol bawah
+                  kemudian dijahit melingkar dengan bagian atas sehingga punya
+                  ketahanan ekstra. Bruce Kilgore ingin sepatunya kuat, aman,
+                  dan jadi pusat perhatian. Dari situlah muncul inspirasi nama
+                  Air Force 1. Sejatinya, Air Force 1 adalah pesawat
+                  kepresidenan Amerika Serikat. Pesawat tersebut punya berbagai
+                  teknologi, disukai oleh banyak orang, dan mampu melindungi
+                  para penumpangnya dengan fitur keamanan mumpuni.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end nike air force -->
+
+    <!-- start nike drop white -->
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Nike Drop White
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" style="width: 80%; margin: 20px auto">
+              <div class="gambar">
+                <img src="assets/images/products/3.jpg" alt="" />
+              </div>
+              <div class="conten mb-5">
+                <h5>
+                  Sepatu buatan tangan klasik brand ternama Nike, White Waffle
+                  Spike yang dibuat tahun 1990-an akan dilelang. Harga lelang
+                  sepatu tersebut diperkirakan akan mencapai 150.000 dolar AS
+                  atau setara dengan Rp 2,1 miliar. Sebagaimana dikutip dari
+                  CNBC, label harga tinggi tersebut dikenakan bukan tanpa
+                  alasan. Ini karena sepatu kets putih tersebut memang dikenal
+                  sebagai bukan sepatu lari biasa. Itu adalah sepatu kets
+                  pertama yang dibuat oleh Bill Bowerman, salah satu pendiri
+                  Nike dan pelatih lintasan legendaris di University of Oregon,
+                  AS. Diketahui sepatu tersebut adalah kerajinan tangan pertama
+                  yang dibuat Bowerman untuk John Mays, pelari di tim treknya.
+                  Keistimewaan sepatu ini tak hanya sampai disitu. Diketahui
+                  pada 1971 saat Nike baru beroperasi, sepatu ini disebut
+                  menjadi karya asli dan inovasi pertama perusahaan yang
+                  mendulang brand hingga miliaran dolar.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end nike drop white -->
+
+    <!-- start nike revolution 6 -->
+    <div
+      class="modal fade"
+      id="exampleModal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Nike Revolution 6
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" style="width: 80%; margin: 20px auto">
+              <div class="gambar">
+                <img src="assets/images/products/4.jpg" alt="" />
+              </div>
+              <div class="conten mb-5">
+                <h5>
+                  PT Sumber Masanda Jaya merupakan pabrik sepatu yang berada di
+                  Jalan Raya Bangsri RT 01, RW 01, Bangsri, Kec. Bulakamba,
+                  Brebes, Jawa Tengah. Brand yang diproduksi adalah Nike dengan
+                  artikel antara lain Nike Revolution 5, Nike Revolution 6, dan
+                  Nike Air Max SC. Kegiatan magang dilaksanakan pada line
+                  Assembling bagian repair mulai tanggal 18 Februari 2022 sampai
+                  dengan 18 Mei 2022. Tujuan kegiatan magang ini untuk
+                  mengetahui proses assembling padasepatu Nike Revolution 6,
+                  mengetahui faktor penyebab cacat produk, dan cacat apa yang
+                  harus difokuskan dalam pengendalian kualitas. Metode
+                  pengumpulan data yang digunakan adalah observasi, wawancara,
+                  dokumentasi, dan studi pustaka. Dalam proses pengendalian
+                  kualitas menggunakan metode analisis seven tools, dimana
+                  diketahui bahwa defect yang harus difokuskan dalam
+                  pengendalian kualitas adalah bonding gap, baik general type
+                  maupun small type. Bonding gap merupakan cacat dimana bagian
+                  upper dan bottom tidak menempel sempurna yang disebabkan
+                  beberapa faktor antara lain dari faktor manusia, mesin,
+                  metode, lingkungan dan material. Tindakan usulan perbaikan
+                  yang diberikan guna mengurangi defect bonding gap adalah
+                  melakukan pengawasan secara rutinkaryawanagar patuh SOP,
+                  checking mesin gauge marking dan chamber secara berkala.
+                  Berdasar hasil pengamatan setelah dilakukan implementasi
+                  usulan perbaikan cacat bonding gap baik general type dan small
+                  type dari total jumlah presentase bulan Maret 5.861 atau 10,5
+                  % menurun 8,13% menjadi 1.320 atau 2,37 % pada bulan April.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END nike revolution 6 -->
+
+    <!-- start Nike Air Max 2013 -->
+
+    <div
+      class="modal fade"
+      id="exampleModal5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Nike Air Max 2013
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" style="width: 80%; margin: 20px auto">
+              <div class="gambar">
+                <img src="assets/images/products/5.jpg" alt="" />
+              </div>
+              <div class="conten mb-5">
+                <h5>
+                  Sepatu ini memiliki fitur visible air dan pertama kali
+                  digunakan pada produk Air Max 1 rancangan Tinker Hatfield,
+                  yang membuat sepatu ini semakin terlihat berkelas dan lain
+                  dari sepatu olahraga jenis lainnya. Sepatu yang dikhususkan
+                  untuk kegiatan berolahraga ini tidak melupakan faktor
+                  kenyamanan bagi penggunanya, dalam produk ini diberikan
+                  pijakan yang nyaman serta meminimalkan lapisan dalam sepatu,
+                  sehingga tercipta sirkulasi udara yang baik bagi kaki
+                  penggunanya. Warna dan bentuk yang elegan tidak semata-mata
+                  untuk memikat hati para konsumen dengan produk terbarunya ini,
+                  Nike juga memberikan fitur konstruksi Nike Hyperfuse yang
+                  digunakan di seluruh bagian sepatu yang membuatnya semakin
+                  ringan meskipun dengan bentuk yang terlihat agak besar. Bentuk
+                  dalam produk ini memberikan kenyamanan lain yaitu bentuk
+                  lapisan dalam yang berlekuk, serta tumpuan atas yang sesuai
+                  dengan tumpuan pergelangan kaki membuat rasa nyaman saat
+                  digunakan.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Nike Air Max 2013 -->
+
+    <!-- start nike air anak anak -->
+    <div
+      class="modal fade"
+      id="exampleModal6"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Nike Air Max anak-anak
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" style="width: 80%; margin: 20px auto">
+              <div class="gambar">
+                <img src="assets/images/products/6.jpg" alt="" />
+              </div>
+              <div class="conten mb-5">
+                <h5>
+                  pada dasar nya tidak hanya anak remaja yang ingin terlihan
+                  kece tentunya kita sebagai orang tua juga pingin lihat anak
+                  kita perpenampilan menarik oleh karena itu kami merilis sepatu
+                  nike air yang di buat khusus anak anak usia 10 thn kebawah
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end nike air anak anak -->
+
+    <!-- start Nike Sb -->
+    <div
+      class="modal fade"
+      id="exampleModal7"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Nike Sb</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" style="width: 80%; margin: 20px auto">
+              <div class="gambar">
+                <img src="assets/images/products/7.jpg" alt="" />
+              </div>
+              <div class="conten mb-5">
+                <h5>
+                  Diluncurkan oleh Nike pada tahun 1985, Dunk dimulai dari
+                  lapangan basket, lalu diadaptasi oleh skateboarder. Pada Maret
+                  2002, Dunk telah dibuat kembali secara spesifik untuk bermain
+                  skate oleh Nike SB. Selama bertahun-tahun, warna dan cerita
+                  dibalik variasi SB Dunks telah membuat menjadi sesuatu yang
+                  terfavorit — yang disayangi oleh skateboarder dan kolektor
+                  sepatu sneaker. Tahun 2017 ini menandakan 15th anniversary
+                  dari Nike SB Dunk. Dalam perayaannya, Nike SB memberikan
+                  penghormatan kepada warisannya dengan sekali lagi menemukan
+                  kembali icon yang paling dikenal dengan memperkenalkan SB
+                  Zoom Dunk Elite Low.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Nike Sb -->
+
+    <!-- start Nike Air Max 270 -->
+    <div
+      class="modal fade"
+      id="exampleModal8"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Nike Air Max 270
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" style="width: 80%; margin: 20px auto">
+              <div class="gambar">
+                <img src="assets/images/products/8.jpg" alt="" />
+              </div>
+              <div class="conten mb-5">
+                <h5>
+                  Mengombinasikan desain lampau dan teknologi kekinian menjadi
+                  tren di antara label sepatu. Salah satu yang turut serta dalam
+                  gelombang tersebut adalah Nike. Koleksi anyar label Swoosh
+                  tersebut menggabungkan unit lifestyle pertama Nike Air, 270
+                  dengan busa teknologi terbaru mereka, React. Koleksi ini pun
+                  membentuk artikulasi baru dari Air Max.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end Nike Air Max 270 -->
+
+    <!-- end Modal -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+      <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      //========= Hero Slider
+      tns({
+        container: ".hero-slider",
+        slideBy: "page",
+        autoplay: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        gutter: 0,
+        items: 1,
+        nav: false,
+        controls: true,
+        controlsText: [
+          '<i class="lni lni-chevron-left"></i>',
+          '<i class="lni lni-chevron-right"></i>',
+        ],
+      });
+
+      //======== Brand Slider
+      tns({
+        container: ".brands-logo-carousel",
+        autoplay: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        gutter: 15,
+        nav: false,
+        controls: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          540: {
+            items: 3,
+          },
+          768: {
+            items: 5,
+          },
+          992: {
+            items: 6,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
